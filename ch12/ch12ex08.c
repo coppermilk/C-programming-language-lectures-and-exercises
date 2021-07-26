@@ -9,6 +9,7 @@ int main() {
         int size;
         int value;
         printf("Введіт количество элементов: ");
+        
         while (scanf("%d", & size) == 1 && size > 0) {
                 printf("Введите значение инициализации: ");
                 scanf("%d", & value);
@@ -19,6 +20,7 @@ int main() {
                 }
                 printf("Введите количество элементов (-1 дла завершения)");
         }
+        
         printf("Программа завершена");
 
         return 0;
@@ -27,6 +29,7 @@ int main() {
 int * make_array(int elem, int val) {
         int * pa = (int * ) malloc(elem * sizeof(int));
         //memset (pa, val, sizeof (int) * elem);
+        
         for (int i = 0; i < elem; i++) {
                 pa[i] = val;
         }
