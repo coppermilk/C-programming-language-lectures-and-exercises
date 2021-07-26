@@ -4,10 +4,12 @@
 
 int * make_array(int elem, int val);
 void show_array(const int ar[], int n);
+
 int main() {
         int * pa;
         int size;
         int value;
+        
         printf("Введіт количество элементов: ");
         
         while (scanf("%d", & size) == 1 && size > 0) {
